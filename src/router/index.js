@@ -22,19 +22,19 @@ const routes = [
     path: '/User',
     name: 'User',
    
-    component: () => import('../views/User.vue')
+    component: () => import('../views/User/User.vue'),
   },
   {
-    path: '/DetailUser',
+    path: '/User/DetailUser',
     name: 'DetailUser',
    
-    component: () => import('../views/DetailUser.vue')
+    component: () => import('../views/User/DetailUser.vue')
   },
   {
-    path: '/PhoneNumber',
+    path: '/User/PhoneNumber',
     name: 'PhoneNumber',
    
-    component: () => import('../views/PhoneNumber.vue')
+    component: () => import('../views/User/PhoneNumber.vue')
   },
   
 ]

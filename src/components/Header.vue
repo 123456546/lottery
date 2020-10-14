@@ -1,5 +1,5 @@
 <template>
-  <van-nav-bar :title="msg" left-text left-arrow class="header_blue" fixed="true"> 
+  <van-nav-bar :title="msg" left-text left-arrow class="header_blue" :fixed="fixed"> 
     <template  #left>
       <van-icon v-if="!back" name="more" dot />
       <van-icon v-if="back" name="arrow-left" @click="onClickLeft" />
@@ -20,6 +20,11 @@ export default {
       default:false
     }
   },
+   data() {
+    return {
+      fixed:true,
+    }
+  },
   methods: {
     onClickLeft() {
       window.history.back();
@@ -28,18 +33,3 @@ export default {
   },
 }
 </script>
-<style>
-  .header_blue{
-      background-image: linear-gradient(to right, #3570f7 , #2797ff);
-
-  }
-  .header_blue .van-icon {
-    color: #fff!important;
-    font-size: 16pt;
-  }
-
-  .header_blue .van-nav-bar__title {
-      color: #fff;
-      font-size: 17pt;
-  }
-</style>

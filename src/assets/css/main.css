@@ -1,35 +1,27 @@
-<template>
-  <div class="home">
-    <Header msg="手机号码" back="true"/>
-    <van-cell center  title="手机号码" label="请输入手机号码" class="top_user">
-    </van-cell>
-    <van-cell center title="手机验证码" label="请输入手机验证码" class="top_user" >
-            
-        </van-cell>
-    <van-row>
-        <van-col offset="16" span="8">
-                <van-button type="primary" class="button_submit">获取验证码</van-button>
-        </van-col>
-    </van-row>
-    <van-cell center  title class="footer_condition">
-        <template #title>
-            <p>为了您的心思安全，信息在确认后将无法修改 如需帮助，请 <span>联系客服</span></p>
-        </template>
-    </van-cell>
-  </div>
-</template>
+.header_blue{
+    background-image: linear-gradient(to right, #e63333, #ff6363);
 
-<script>
-// @ is an alias to /src
-import Header from '@/components/Header.vue'
-export default {
-  name: 'PhoneNumber',
-  components: {
-    Header
-  }
 }
-</script>
-<style >
+.header_blue .van-icon {
+  color: #fff!important;
+  font-size: 16pt;
+}
+
+.header_blue .van-nav-bar__title {
+    color: #fff;
+    font-size: 17pt;
+}
+.center_tab .van-icon {
+    color: #ed4040;
+    font-size: 44pt;
+    position: relative;
+    top: -8px;
+    background: #fff;
+    border-radius: 50%;
+    border-top: 1px solid #ebedf0;
+    /* box-shadow: -1px -12px 24px 0px #ccc; */
+    z-index: 1;
+}
 .custom-title {
     margin-right: 4px;
     vertical-align: middle;
@@ -150,6 +142,8 @@ span.custom_info {
 }
 .link_user {
     background: #f2f4f8;
+    padding-top: 10px;
+    padding-bottom: 54px;
 }
 
 .link_user img {
@@ -196,6 +190,9 @@ span.custom_info {
 img.profil_user {
     width: 60px;
 }
+img.profil_user {
+    width: 60px;
+}
 
 button.button_submit.van-button {
     padding: 6px 9px;
@@ -205,4 +202,3 @@ button.button_submit.van-button {
     border-color: #f2d6b6;
     font-weight: 500;
 }
-</style>
