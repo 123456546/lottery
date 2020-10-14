@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Header msg="个人中心"/>
+    <Header msg="个人中心" iconRight="setting-o"/>
     <van-cell center  title label="1,000,000" icon class="top_user" is-link to="User/DetailUser">
       <template #right-icon>
         <van-icon name="arrow" class="arrow" />
@@ -117,7 +117,7 @@ import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
-  name: 'Home',
+  name: 'User',
   components: {
     Header,
     Footer

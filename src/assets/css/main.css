@@ -201,4 +201,37 @@ button.button_submit.van-button {
     background: #f2d6b6;
     border-color: #f2d6b6;
     font-weight: 500;
+}.HomePage .van-icon.van-icon-ellipsis {
+    transform: rotate(90deg);
+}
+
+p.infoLogin {
+    display: none;
+    font-size: 8pt;
+    position: relative;
+    color: #fff;
+}
+
+.HomePage p.infoLogin {
+    display: block;
+}
+
+p.infoLogin span {
+    color: #ffe718;
+}
+.van-swipe-item img {
+    width: 100%;
+}
+.notification_top {
+    background: transparent;
+}
+
+.notification_top img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.notification_top .van-notice-bar__wrap>div {
+    color: #7c7c7c;
+    font-size: 9pt;
 }
