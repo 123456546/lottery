@@ -1,5 +1,5 @@
 <template>
-  <van-nav-bar :title="msg" left-text left-arrow class="header_blue">
+  <van-nav-bar :title="msg" left-text left-arrow class="header_blue" fixed="true"> 
     <template #left>
       <van-icon name="more" dot />
     </template>

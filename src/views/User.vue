@@ -175,6 +175,7 @@ span.custom_info {
 }
 .home {
     background: #fefefe;
+    padding-top: 50px;
 }
 .info_user img {
     width: 40px;
