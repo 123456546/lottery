@@ -17,7 +17,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
   .header_blue{
       background-image: linear-gradient(to right, #3570f7 , #2797ff);
 
