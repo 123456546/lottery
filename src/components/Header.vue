@@ -1,10 +1,11 @@
 <template>
   <van-nav-bar :title="msg" left-text left-arrow class="header_blue" fixed="true"> 
-    <template #left>
-      <van-icon name="more" dot />
+    <template  #left>
+      <van-icon v-if="!back" name="more" dot />
+      <van-icon v-if="back" name="arrow-left" @click="onClickLeft" />
     </template>
     <template #right>
-      <van-icon name="setting-o" />
+      <van-icon v-if="!back"  name="setting-o" />
     </template>
   </van-nav-bar>
 </template>
@@ -13,8 +14,18 @@
 export default {
   name: 'Header',
   props: {
-    msg: String
-  }
+    msg: String,
+    back:{
+      type:Boolean,
+      default:false
+    }
+  },
+  methods: {
+    onClickLeft() {
+      window.history.back();
+    }
+    
+  },
 }
 </script>
 <style>

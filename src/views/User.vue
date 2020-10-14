@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Header msg="个人中心"/>
-    <van-cell center  title label="1,000,000" icon class="top_user">
+    <van-cell center  title label="1,000,000" icon class="top_user" is-link to="DetailUser">
       <template #right-icon>
         <van-icon name="arrow" class="arrow" />
       </template>
@@ -136,7 +136,6 @@ export default {
   }
   .top_user>img {
     width: 50px;
-    border-radius: 50%;
     display: inline-block;
 }
 
