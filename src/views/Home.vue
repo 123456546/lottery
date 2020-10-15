@@ -118,10 +118,88 @@
             </van-grid>
         </div>
         
-        <van-image
-          v-if="active === 1"
-          src="https://img.yzcdn.cn/vant/apple-2.jpg"
-        />
+        <div class="content_home_grup" v-if="active === 1">
+            <div class="content_header">
+              <h2>天津时时彩</h2>
+              <p>momoLOTTERY</p>
+                    <img alt="user_avatar" src='@/assets/home/sucai.png'>
+                    <van-button plain>开始游戏</van-button>
+            </div>
+            <van-grid :gutter="10" direction="horizontal" :column-num="2" >
+              <van-grid-item text class="block1">
+                <template #text>
+                  <p>
+                    天津时时彩
+                  </p>
+                  <div>
+                    <h2>天津时时彩</h2>
+                    <van-button plain>XX分钟一期</van-button>
+                    <img alt="user_avatar" src='@/assets/home/超级3D.png'>
+                  </div>
+                </template>
+              </van-grid-item>
+              <van-grid-item text class="block2">
+                <template #text>
+                  <p>
+                    天津时时彩
+                  </p>
+                  <div>
+                    <h2>天津时时彩</h2>
+                    <van-button plain>XX分钟一期</van-button>
+                    <img alt="user_avatar" src='@/assets/home/十分六合彩.png'>
+                  </div>
+                </template>
+              </van-grid-item>
+              <van-grid-item text class="block3">
+                <template #text>
+                  <p>
+                    天津时时彩
+                  </p>
+                  <div>
+                    <h2>天津时时彩</h2>
+                    <van-button plain>XX分钟一期</van-button>
+                    <img alt="user_avatar" src='@/assets/home/十分快三.png'>
+                  </div>
+                </template>
+              </van-grid-item>
+              <van-grid-item text class="block4">
+                <template #text>
+                  <p>
+                    天津时时彩
+                  </p>
+                  <div>
+                    <h2>天津时时彩</h2>
+                    <van-button plain>XX分钟一期</van-button>
+                    <img alt="user_avatar" src='@/assets/home/湖北快三.png'>
+                  </div>
+                </template>
+              </van-grid-item>
+              <van-grid-item text class="block5">
+                <template #text>
+                  <p>
+                    天津时时彩
+                  </p>
+                  <div>
+                    <h2>天津时时彩</h2>
+                    <van-button plain>XX分钟一期</van-button>
+                    <img alt="user_avatar" src='@/assets/home/天津时时彩.png'>
+                  </div>
+                </template>
+              </van-grid-item>
+              <van-grid-item text class="block6">
+                <template #text>
+                  <p>
+                    天津时时彩
+                  </p>
+                  <div>
+                    <h2>天津时时彩</h2>
+                    <van-button plain>XX分钟一期</van-button>
+                    <img alt="user_avatar" src='@/assets/home/一分11选5.png'>
+                  </div>
+                </template>
+              </van-grid-item>
+            </van-grid>
+        </div>
       </template>
     </van-tree-select>
     <Footer/>
