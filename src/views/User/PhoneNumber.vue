@@ -13,7 +13,7 @@
     </van-row>
     <van-cell center  title class="footer_condition">
         <template #title>
-            <p>为了您的心思安全，信息在确认后将无法修改 如需帮助，请 <span>联系客服</span></p>
+            <p>为了您的信息安全，信息在确认后将无法修改 如需帮助，请 <span>联系客服</span></p>
         </template>
     </van-cell>
   </div>
